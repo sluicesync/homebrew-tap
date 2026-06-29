@@ -5,21 +5,21 @@
 class Sluice < Formula
   desc "Open-source MySQL <-> Postgres database migration and continuous-sync (CDC) tool"
   homepage "https://sluicesync.com"
-  version "0.99.154"
+  version "0.99.155"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sluicesync/sluice/releases/download/v0.99.154/sluice_0.99.154_Darwin_x86_64.tar.gz"
-      sha256 "96d95f0ad045cb71d154be4f3429fae0ad89b01c2cf80c63070ee1adda1efe17"
+      url "https://github.com/sluicesync/sluice/releases/download/v0.99.155/sluice_0.99.155_Darwin_x86_64.tar.gz"
+      sha256 "bc772db4c7feb40ecb9ab257e15bc520f8c5aa6652bccef9efce779f487300cc"
 
       define_method(:install) do
         bin.install "sluice"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sluicesync/sluice/releases/download/v0.99.154/sluice_0.99.154_Darwin_arm64.tar.gz"
-      sha256 "509beaa20d4d959a23c9a8a44b588fe2447c7b05b6f5239b46f065ca66b43584"
+      url "https://github.com/sluicesync/sluice/releases/download/v0.99.155/sluice_0.99.155_Darwin_arm64.tar.gz"
+      sha256 "a440633b74745d6a13fa1b230ecb1c15b86a1f295bc8767d8243259257d42476"
 
       define_method(:install) do
         bin.install "sluice"
@@ -29,15 +29,15 @@ class Sluice < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sluicesync/sluice/releases/download/v0.99.154/sluice_0.99.154_Linux_x86_64.tar.gz"
-      sha256 "0bf6cc7bd63768564d3c9c14759c3b19dcd8008ca967214907df4894430eb3ba"
+      url "https://github.com/sluicesync/sluice/releases/download/v0.99.155/sluice_0.99.155_Linux_x86_64.tar.gz"
+      sha256 "7982fe2fd636f4d2b38ad35ce397cadf275c9775ac380ff1bf2501abbaeba972"
       define_method(:install) do
         bin.install "sluice"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sluicesync/sluice/releases/download/v0.99.154/sluice_0.99.154_Linux_arm64.tar.gz"
-      sha256 "8e51af068a080e1a2b0833b4db12c99f1a32111ccce66403ca93620add7f878b"
+      url "https://github.com/sluicesync/sluice/releases/download/v0.99.155/sluice_0.99.155_Linux_arm64.tar.gz"
+      sha256 "0799f662321b7bf2aa92d7a3d8b0e049e884af084056ac2fc55e55b42587a14c"
       define_method(:install) do
         bin.install "sluice"
       end

@@ -11,7 +11,7 @@ class Sluice < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/sluicesync/sluice/releases/download/v0.152.1/sluice_0.152.1_Darwin_x86_64.tar.gz"
-      sha256 "88f3a6429ec9fa1d172e2b734afd1c4be6aca68627940b84668db59f2c60518f"
+      sha256 "11fb34991333596a4cf240148f617a2983735f1ebd41240e51e42a0747dd318b"
 
       define_method(:install) do
         bin.install "sluice"
@@ -19,7 +19,7 @@ class Sluice < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/sluicesync/sluice/releases/download/v0.152.1/sluice_0.152.1_Darwin_arm64.tar.gz"
-      sha256 "03119f3bee722bae9cd88abe833228fa395c3700e6fdc436c6c41e131742a6b3"
+      sha256 "681088bdc6dc0deaf27cc00aef91e3b858c877ba0e31e8ee3cf6b975f2a7905b"
 
       define_method(:install) do
         bin.install "sluice"
@@ -30,14 +30,14 @@ class Sluice < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/sluicesync/sluice/releases/download/v0.152.1/sluice_0.152.1_Linux_x86_64.tar.gz"
-      sha256 "da1a1de4a7f421b2f7bb7a97e6f4287cca18b7ebef7020bd5cd14a8b72d76fcf"
+      sha256 "082d9500b44310b7bc6ab21bdc47340378ce15b2996c0957756bafd155c60512"
       define_method(:install) do
         bin.install "sluice"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/sluicesync/sluice/releases/download/v0.152.1/sluice_0.152.1_Linux_arm64.tar.gz"
-      sha256 "75a72a0500cf24fec0c4d0e16be1996ac15e6e056cb1f1f286214a1c2d1b23e3"
+      sha256 "6e5a9ab8f4a1198c8e57c7bbc1fed3e0fc3a3ee229789f560898e4010f2306be"
       define_method(:install) do
         bin.install "sluice"
       end
